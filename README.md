@@ -29,4 +29,10 @@
   ing courses (see https://eicu-crd.mit.edu/
   gettingstarted/access/).
 
-  
+- Table of results
+
+  In this project, we implemented model 2 (structured features only), and model 4 (structured features + ClinicalBERT). We have construct TF-IDF embeddings, but the tensor is too large to be fit into RAM, so we didn't train model 3 (TF-IDF + structured features)
+
+  We got AUC = 0.875 for model 2. 
+
+  For model 4, we only have time to train several epochs and didn't tune the learning rate properly, so we got AUC = 0.5. 
